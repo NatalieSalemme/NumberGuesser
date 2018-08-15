@@ -1,0 +1,35 @@
+#input {
+  width: 80px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5em;
+}
+#submit {
+  margin: 2em 0 2em 0;
+}
+
+body {
+  background-image: url("https://cdn.pixabay.com/photo/2016/06/07/16/12/sky-1441936_960_720.jpg");
+  /*https://cdn.pixabay.com/photo/2016/03/09/16/46/landscape-1246834_960_720.jpg */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#help-box {
+  border: 2px dotted black;
+  height: 200px;
+  width: 200px;
+  text-align: center;
+}
+.red-text {
+  color: red;
+  font-size: 50px;
+}
+#playAgain {
+  text-align: center;
+  justify-content: center;
+  color: blue;
+  margin-top: 1em;
+}
