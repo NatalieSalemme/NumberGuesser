@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,12 +6,20 @@
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-  <h1>Guess the Number (1-100)</h1>
-  <h3>Your Guess:</h3>
-  <input type="number" min="1" max="100" name="numberInput" id="input">
-  <input type="submit" name="submit" id="submit">
-  <div id="results-box"></div>
+<canvas id="myCanvas" width="1000" height="270"></canvas>
+  <div class="container">
+    <h1>Guess the Number (1-100)</h1>
+    <h3>Your Guess:</h3>
+    <input type="number" min="1" max="100" name="numberInput" id="input">
+    <input type="submit" name="submit" id="submit">
+    <div id="results-box"></div>
+      <h4>Previous Guesses</h4>
+    <div id="help-box"></div>
+    <di id="playAgain"></div>
 
+</div>
+
+<div class="wrapper"></div>
 
 
       <script src="app.js"></script>
