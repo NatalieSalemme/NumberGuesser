@@ -6,6 +6,7 @@
   flex-direction: column;
   align-items: center;
   margin-top: 5em;
+  position: relative;
 }
 #submit {
   margin: 2em 0 2em 0;
@@ -16,6 +17,9 @@ body {
   /*https://cdn.pixabay.com/photo/2016/03/09/16/46/landscape-1246834_960_720.jpg */
   background-size: cover;
   background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #help-box {
   border: 2px dotted black;
@@ -32,4 +36,10 @@ body {
   justify-content: center;
   color: blue;
   margin-top: 1em;
+}
+#myCanvas {
+  border:1px solid;
+  position: absolute;
+  margin-top: 9em;
+  z-index: 2;
 }
