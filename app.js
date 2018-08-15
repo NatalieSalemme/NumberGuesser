@@ -22,6 +22,19 @@ function guesser() {
     helpBox.push('YOU WON!!!!!!');
     helpBox.push('<br>' + 'The winning number was ' + inputBox.value + '<br>');
     inputBox.value = '';
+
+
+    let canvas = document.getElementById('myCanvas');
+    let ctx = canvas.getContext('2d');
+    ctx.font = ('150px Comic Sans MS');
+    ctx.fillStyle = "orange";
+    ctx.textAlign = "center";
+    ctx.fillText("You WON!", canvas.width / 2, canvas.height /2);
+
+
+
+
+
     gameOver();
   } else if (helpBox.length == 10) {
     // helpBox.classList.add('red-text');
@@ -29,6 +42,13 @@ function guesser() {
     helpBox.push('YOU LOST!!!!');
     helpBox.push('<br>');
     inputBox.value = '';
+    let canvas = document.getElementById('myCanvas');
+    let ctx = canvas.getContext('2d');
+    ctx.font = ('150px Comic Sans MS');
+    ctx.fillStyle = "red";
+    ctx.textAlign = "center";
+    ctx.fillText("You LOST!", canvas.width / 2, canvas.height /2);
+
     gameOver();
 
   }  else if(inputBox.value > 100 || inputBox.value < 1) {
@@ -54,3 +74,9 @@ inputBox.addEventListener('keydown', (e) => {
     guesser();
   }
 });
+playButton.addEventListener('click', () => {
+  window.location.reload(true); //reloads page and randomNumber without reloading
+});
+
+
+
